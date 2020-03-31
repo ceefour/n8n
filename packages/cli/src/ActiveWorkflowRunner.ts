@@ -114,7 +114,6 @@ export class ActiveWorkflowRunner {
 
 		if (webhookData === undefined) {
 			// The requested webhook is not registered
-			console.error(this.activeWebhooks);
 			throw new ResponseHelper.ResponseError(`The requested webhook "${httpMethod} ${path}" is not registered.`, 404, 404);
 		}
 
